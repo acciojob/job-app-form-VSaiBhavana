@@ -3,14 +3,14 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 </head>
-<body><form></form>
+<body><form method="post">
 	<label for="name">Name</label>
 	<input id="name" type="text" placeholder="Name" required><br><br>
 	<label for="email">Email</label>
 	<input id="email" type="email" placeholder="Email" required><br><br>
 	<label for="gender">Gender</label>
 	<input id="gender" type="radio" name="gender" value="male" required>Male
-	<input id="gender" type="radio" name="gender" value="female" required><br><br>
+	<input id="gender" type="radio" name="gender" value="female" required>Female<br><br>
 	<label for="laptop">Laptop Brands</label>
 	<select>
 		<option>Acer</option>
@@ -18,13 +18,16 @@
 		<option>HP</option>
 		<option>Apple</option>
 	</select><br><br>
-	<label>Age</label>
-	<input><br><br>
+	<label for="age">Age</label>
+	<input type="number" id="age" placeholder="Age" required><br><br>
+	<label for="dob">Date of Birth</label>
+	<input type="date" id="dob" required><br><br>
 	<label>Password</label>
-	<input><br><br>
-	<label>Portfolio</label>
-	<input><br><br>
-	<button>Submit</button>
+	<input type="password" id="password" placeholder="Password" required><br><br>
+	<label for="portfolio">Portfolio</label>
+	<input type="url" placeholder="URL" id="portfolio"><br><br>
+	<button type="submit">Submit</button>
 	<script type="text/javascript" src="./script.js"></script>
+	</form>
 </body>
 </html>
